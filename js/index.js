@@ -8,10 +8,6 @@ headImages[0] = '../images/head1.jpg';
 headImages[1] = '../images/head2.jpg';
 headImages[2] = '../images/head3.jpg';
 
-footImages[0] = '../images/foot1.jpg';
-footImages[1] = '../images/foot2.jpg';
-footImages[2] = '../images/foot1.jpg';
-
 function changeHeadImg(){
     document.slide.src = headImages[i];
     if(i <headImages.length - 1){
