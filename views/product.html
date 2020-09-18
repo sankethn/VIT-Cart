@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>VITCart</title>
+    <link rel="stylesheet" type="text/css" href="../css/product.css">
+    <script src="../js/index.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="grid-container">
+        <nav class="nav">
+            <div class="brand">
+                <button onclick="openMenu()">
+                    &#9776;
+                </button>
+                <a href="">VITCart</a>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="Search For A Product">
+                <button>Search</button>
+            </div>
+            <div class="leftMenu">
+                <a class="nav-links" href="">Login<i class="fas fa-sign-in-alt"></i></a>
+                <a class="nav-links" href="">Cart<i class="fas fa-shopping-cart"><span id='lblCartCount'> 5 </span></i></a>
+            </div>
+        </nav>
+
+        <aside class="sidebar">
+            <h3>Shopping Categories</h3>
+            <button class="sidebar-close-button" onclick="closeMenu()">X</button>
+            <ul>
+                <li>
+                    <a href="">Men<i class="fas fa-chevron-right"></i></a>
+                </li>
+                <li>
+                    <a href="">Women<i class="fas fa-chevron-right"></i></a>
+                </li>
+                <li>
+                    <a href="">Food & Drinks<i class="fas fa-chevron-right"></i></a>
+                </li>
+                <li>
+                    <a href="">Groceries<i class="fas fa-chevron-right"></i></a>
+                </li>
+                <li>
+                    <a href="">Stationaries<i class="fas fa-chevron-right"></i></a>
+                </li>
+            </ul>
+        </aside>
+
+        <main class="main">
+            <div class="product-image">
+                <img src="../images/1.png">
+            </div>
+            <div class="product-details">
+                <h1 class="product-name">Tata Salt</h1>
+                <h3 class="product-price">$1.20</h3>
+                <div class="product-description">
+                    <label>Description</label>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere modi laboriosam animi at, natus quam doloribus blanditiis fugit laudantium expedita!</p>
+                </div>
+                <div class="status">
+                    <label>Status</label>
+                    <p>In Stock</p>
+                </div>
+                <div class="qty">
+                    <label>Qty</label>
+                    <select>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                    </select>
+                </div>
+                <button class="cart">Add to cart</button>
+            </div>
+
+            <div class="container">
+                <h1>Reviews</h1>
+                <div class="review">
+                    <div class="rating">
+                        <h3>Customer Reviews</h3>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="inWords">3.9 out of 5</span>
+                        <div class="visual">
+                            <div class="starType">
+                                <div class="star">5 Star</div><div class="empty"><div class="fill"></div></div>
+                            </div>
+                            <div class="starType">
+                                <div class="star">4 Star</div><div class="empty"><div class="fill"></div></div>
+                            </div>
+                            <div class="starType">
+                                <div class="star">3 Star</div><div class="empty"><div class="fill"></div></div>
+                            </div>
+                            <div class="starType">
+                                <div class="star">2 Star</div><div class="empty"><div class="fill"></div></div>
+                            </div>
+                            <div class="starType">
+                                <div class="star">1 Star</div><div class="empty"><div class="fill"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="addReview">
+                        <h3>Review this product</h3>
+                        <button>Write a review</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <h3 class="name">Sanket H N</h3>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam doloremque aperiam ad, vitae consequatur consectetur illum eligendi porro expedita, hic repudiandae debitis perferendis, nisi sed.</p>
+                    <h3 class="name">Pradush</h3>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam doloremque aperiam ad, vitae consequatur consectetur illum eligendi porro expedita, hic repudiandae debitis perferendis, nisi sed.</p>
+                    <h3 class="name">John</h3>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam doloremque aperiam ad, vitae consequatur consectetur illum eligendi porro expedita, hic repudiandae debitis perferendis, nisi sed.</p>
+                    
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            All Rights Reserved
+        </footer>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>VITCart</title>
+    <link rel="stylesheet" type="text/css" href="../css/cart.css">
+    <script src="../js/index.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="grid-container">
+        <nav class="nav">
+            <div class="brand">
+                <button onclick="openMenu()">
+                    &#9776;
+                </button>
+                <a href="">VITCart</a>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="Search For A Product">
+                <button>Search</button>
+            </div>
+            <div class="leftMenu">
+                <a class="nav-links" href="">Login<i class="fas fa-sign-in-alt"></i></a>
+                <a class="nav-links" href="">Cart<i class="fas fa-shopping-cart"><span id='lblCartCount'> 5 </span></i></a>
+            </div>
+        </nav>
+
+        <aside class="sidebar">
+            <h3>Shopping Categories</h3>
+            <button class="sidebar-close-button" onclick="closeMenu()">X</button>
+            <ul>
+                <li>
+                    <a href="">Men<i class="fas fa-chevron-right"></i></a>
+                </li>
+                <li>
+                    <a href="">Women<i class="fas fa-chevron-right"></i></a>
+                </li>
+                <li>
+                    <a href="">Food & Drinks<i class="fas fa-chevron-right"></i></a>
+                </li>
+                <li>
+                    <a href="">Groceries<i class="fas fa-chevron-right"></i></a>
+                </li>
+                <li>
+                    <a href="">Stationaries<i class="fas fa-chevron-right"></i></a>
+                </li>
+            </ul>
+        </aside>
+
+        <main class="main">
+
+            <div class="container">
+                <div class="cart">
+                    <h1>Your Cart</h1>
+                    <table>
+                        <tr>
+                            <td class="product thead">Product Details</td>
+                            <td class="qty thead">Qty</td>
+                            <td class="price thead">Price</td>
+                        </tr>
+                        <tr>
+                            <td class="product">
+                                <img src="../images/1.png">
+                                <div class="details">
+                                    <h5 class="product-name">Tata Salt</h5>
+                                    <p class="p">$1.20</p>
+                                    <p class="status">In Stock</p>
+                                </div>
+                            </td>
+                            <td class="qty pQty">1</td>
+                            <td class="price pPrice">$1.20</td>
+                        </tr>
+                        <tr>
+                            <td class="product">
+                                <img src="../images/1.png">
+                                <div class="details">
+                                    <h5 class="product-name">Tata Salt</h5>
+                                    <p class="p">$1.20</p>
+                                    <p class="status">In Stock</p>
+                                </div>
+                            </td>
+                            <td class="qty pQty">1</td>
+                            <td class="price pPrice">$1.20</td>
+                        </tr>
+                    </table>
+                </div>
+
+                    <div class="total">
+                        <button class="CK">CHECKOUT</button>
+                        <h4 class="or">OR</h4>
+                        <button class="paypal">CHECK OUT WITH<img src="../images/iconfinder__Paypal-39_1156727 (1).png"></i></button>
+                        <hr>
+                        <h3>ORDER SUMMARY</h3>
+                        <div class="subtotal">
+                            <label>SUBTOTAL</label>
+                            <p>$2.40</p>
+                        </div>
+                        <div class="sCharge">
+                            <label>SHIPPING CHARGE</label>
+                            <p>free</p>
+                        </div>
+                        <hr>
+                        <div class="finalPrice">
+                            <label>ORDER TOTAL</label>
+                            <p>$2.40</p>
+                        </div>
+                    </div>
+
+            </div>
+        </main>
+
+        <footer class="footer">
+            All Rights Reserved
+        </footer>
+    </div>
+
+</body>
+</html>

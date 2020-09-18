@@ -37,6 +37,8 @@ body{
     grid-area: main;
     padding: 0;
     margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .footer{
@@ -47,6 +49,7 @@ body{
     font-size: 1.5rem;
     padding-top: 20px;
     font-weight: 600;
+    position: relative;
 }
 
 
@@ -189,188 +192,193 @@ body{
 .sidebar ul li a i{
     padding-left: 3rem;
 }
-  
 
 /* main */
 
-.type{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 60%;
-    margin: 1rem auto;
+.product-image{
+    grid-row: 1/2;
+    grid-column: 1/3;
+    padding: 2rem 5rem;
+    height: 30rem;
 }
 
-.typeBtn{
-    width: 200px;
-    height: 200px;
-    border-radius: 100%;
-    outline: none;
-    background-color:#aad0d9;
-    border: none;
-    font-weight: 600;
-    color:white;
-    cursor: pointer;
-    box-shadow: 8px 6px 29px -7px rgba(0,0,0,0.75);
-    font-size: 1.3rem;
-    
-}
-
-.typeBtn:hover{
-    background-color: #e5b9b6;
-    transform: scale(1.06);
-}
-
-.pHead{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 67.5%;
-    margin: 10px auto;
-    margin-top: 50px;
-    line-height: 3;
-    border-radius: 8px;
-    background-color: #e9a8a3;
-    color: white;
-    font-size: 1rem;
-}
-
-.products{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
-    width: 70%;
-    margin: 0 auto;
-}
-
-.products li{
-    flex: 0 1 20rem;
-    padding: 0;
-    margin: 1rem;
-    /* height: 20rem; */
-}
-
-.product{
-    /* display: flex; */
-    flex-direction: column;
-    justify-content: space-between;
+.product-image img{
     height: 100%;
-    box-shadow: 10px 10px 30px -4px rgba(0,0,0,0.56);
-    border-radius: 10px;
+    margin-left: 6rem;
 }
 
-.product:hover{
-    transform: scale(1.02);
-}
-
-.products li .product .product-image{
-    margin: 5px;
-    margin-left: 85px;
-    cursor: pointer;
-}
-
-.product-info{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #aad0d9;
-    border-radius: 10px;
-    height: 48%;
+.product-details{
+    grid-row: 1/2;
+    grid-column: 3/5;
+    padding: 3rem 3rem;
+    width: 90%;
 }
 
 .product-name{
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin: 1.5rem;
-}
-
-.product-name a{
-    color:white;
+    color: #9ea1af;
+    font-size: 3.5rem;
+    padding: 10px 0;
 }
 
 .product-price{
-    font-size: 1rem;
-    font-weight: bold;
-    margin-bottom: .5rem;
-    color: #9ea1af;
+    font-size: 2rem;
+    color: #aad0d9;
+    font-weight: 800;
+    padding-bottom: 3rem;
 }
 
-.product-rating{
-    font-size: 1rem;
-    color: white;
+.product-description label, .status label, .qty label{
+    font-size: 1.5rem;
+    color: #838b96;
+    font-weight: 800;
+    line-height: 2;
 }
 
-.product-info button{
-    background-color: #e5b9b6;
+.product-description p, .status p, .qty select{
+    color: #aad0d9;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.qty select{
+    margin-left: 20px;
+    width: 4rem;
+    border: 2px solid #e9a8a3;
+    border-radius: 8px;
+    outline: none;
+    cursor: pointer;
+}
+
+.qty select:hover{
+    border-color: #aad0d9;
+    color: #e9a8a3;
+}
+
+.cart{
+    margin-top: 15px;
+    width: 8rem;
+    height: 2.5rem;
+    border-radius: 8px;
     border: none;
     outline: none;
-    width: 12rem;
-    height: 1.8rem;
-    border-radius: 5px;
-    color: white;
-    font-weight: 550;
-    margin: 5px;
-    cursor: pointer;
-}
-
-.box{
-    margin-left: 380px;
-    margin-top: 20px;
-    column-count: 3;
-    line-height: 2;
-    column-gap: 10px;
-}
-
-.box img{
-    width: 100% !important;
-    height: auto !important;
-    transition: all 1s;
-    box-shadow: 10px 10px 30px -4px rgba(0,0,0,0.56);
-}
-
-.box img:hover{
-    transform: scale(1.05);
-}
-
-.galleryHead{
-    text-align: center;
-    margin-top: 40px;
-    color: #aad0d9;
-    font-size: 3rem;
-}
-
-
-.container {
-    display: grid;
-    grid-template-columns: 200px 200px 200px 200px;
-    justify-content: center;
-    align-items: center;
-    background-color: #aad0d9;
-    column-gap: 10px;
-    row-gap: 1em;
-    height: 350px;
-    margin-bottom: 2rem;
-  }
-
-.container a{
-    padding: 15px 60px;
     cursor: pointer;
     background-color: #e9a8a3;
-    text-align: center;
-    border-radius: 8px;
     color: white;
+    font-weight: 550;
+    font-size: .9rem;
 }
 
-.ourBrands{
-    margin: 0;
-    padding-top: 15px;
-    text-align: center;
+.cart:hover{
     background-color: #aad0d9;
-    color: white;
-    text-transform: uppercase;
-    font-weight: 650;
-    /* font-size: 1rem; */
 }
 
+.container{
+    grid-row: 3;
+    grid-column: 1/5;
+    margin: 4rem auto;
+}
+
+.container h1{
+    text-align: center;
+    color: #838b96;
+    font-weight: 600;
+    font-size: 2.5rem;
+    border-top: 3px solid #aad0d9;
+    border-bottom: 3px solid #aad0d9;
+    margin-bottom: 3.5rem;
+    padding: 10px 0;
+}
+
+.container .box{
+    width: 96%;
+}
+
+.container .box h3{
+    color: #e9a8a3;
+    line-height: 3;
+    font-size: 1.3rem;
+}
+
+.container .box p{
+    color: #838b96;
+    font-weight: 550;
+    padding: 15px 0;
+}
+
+.review{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.rating{
+    padding: 0 2rem;
+    color: #838b96;
+}
+
+.rating h3{
+    margin: 10px 0;
+}
+
+.addReview{
+    width: 30rem;
+    padding: 0 2rem;
+}
+
+.addReview h3{
+    padding: 10px 0;
+    text-align: center;
+    color: #838b96;
+}
+
+.addReview button{
+    width: 100%;
+    height: 2.3rem;
+    margin: 24px 0;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    background-color: #e9a8a3;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.addReview button:hover{
+    background-color: #aad0d9;
+}
+
+.fa-star.checked {
+    color: orange;
+    /* border: none; */
+}
+
+.fa-star{
+    color: white;
+}
+
+.empty{
+    width: 200px;
+    height: 30px;
+    padding: 0;
+    margin: 7px 10px;
+    border: .5px solid #9ea1af;
+    border-radius: 5px;
+    
+}
+
+.fill{
+    width: 20%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: orange;
+    border-radius: 5px;
+}
+
+.star, .empty{
+    display: inline-block;
+    vertical-align: middle;
+}
 
